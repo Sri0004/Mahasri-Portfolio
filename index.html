@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahasri R | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script href="script.js"></script>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="logo">MR</div>
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="intro">Hi, I'm</p>
+      <h1 class="name">MAHASRI R</h1>
+      <h2 class="role zoom-role">Full Stack Java Developer</h2>
+
+      <p class="desc">
+        Passionate developer skilled in building responsive web apps, crafting backend APIs, and creating intuitive UIs using modern frameworks.
+      </p>
+      <div class="buttons">
+      <a href="#contact" class="btn">Hire me</a>
+      <a href="#contact" class="btn-outline">Let's talk</a>
+      </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-frame">
+          <img src="C:\Users\rsmds\OneDrive\Pictures\sri blaazer.jpg" alt="Profile Photo" class="profile-photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('hidden-card');
+        entry.target.classList.add('fadeInUp');
+        observer.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.project-card').forEach(card => {
+    observer.observe(card);
+  });
+</script>
+
+<!--about section-->
+<section id="about" class="about-modern">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>👋 Hello!</h3>
+        <p>I'm <strong>Mahasri R</strong>, a <strong>Java Full Stack Developer</strong>.</p>
+      </div>
+      <div class="about-card">
+        <h3>🧠 What I Do</h3>
+        <p>I build full-stack apps using Java, Spring Boot, HTML, CSS, and React.</p>
+      </div>
+      <div class="about-card">
+        <h3>🚀 Passion & Goals</h3>
+        <p>I love hackathons and solving real-world tech problems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="resume-section">
+  <h2 class="section-title">My Resume</h2>
+  <p class="resume-description">
+    Interested in collaborating or hiring me? Download my resume to learn more about my background, skills, and experience.
+  </p>
+  <div class="center-button">
+    <a href="C:\Users\rsmds\Downloads\Mahasri R resume final.pdf (5).pdf" download class="resume-button" target="_blank">Download Resume</a>
+  </div>
+</section>
+
+<!--education section-->
+<section class="education-section" id="education">
+  <h2 class="section-title">Education</h2>
+
+  <div class="education-cards">
+    <div class="education-card">
+      <i class="fas fa-graduation-cap"></i>
+      <h3>B.E. Computer Science and Engineering</h3>
+      <p>Dhirajlal Gandhi College of Technology</p>
+      <span class="edu-date">2022 - 2026</span>
+    </div>
+
+    <div class="education-card">
+      <i class="fas fa-school"></i>
+      <h3>HSC - Maths Biology</h3>
+      <p>Senthil Matric. Hr. Sec. School</p>
+      <span class="edu-date">2020 - 2022</span>
+    </div>
+
+    <div class="education-card">
+      <i class="fas fa-book-reader"></i>
+      <h3>SSLC</h3>
+      <p>Western Gate Matriculation School</p>
+      <span class="edu-date">2019 - 2020</span>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section" id="skills">
+  <h2 class="skills-title">My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <i class="devicon-java-plain colored"></i>
+      <p>Java</p>
+    </div>
+    <div class="skill-item">
+      <i class="devicon-html5-plain colored"></i>
+      <p>HTML</p>
+    </div>
+    <div class="skill-item">
+      <i class="devicon-css3-plain colored"></i>
+      <p>CSS</p>
+    </div>
+    <div class="skill-item">
+      <i class="devicon-javascript-plain colored"></i>
+      <p>JavaScript</p>
+    </div>
+    
+    <div class="skill-item">
+      <i class="devicon-react-original colored"></i>
+      <p>React</p>
+    </div>
+    <div class="skill-item">
+      <i class="devicon-nodejs-plain colored"></i>
+      <p>Node.js</p>
+    </div>
+    <div class="skill-item">
+      <i class="devicon-mysql-plain colored"></i>
+      <p>MySQL</p>
+    </div>
+    <div class="skill-item">
+      <i class="fab fa-github"></i>
+      <p>GitHub</p>
+    </div>
+    <div class="skill-item">
+      <i class="devicon-vscode-plain colored"></i>
+      <p>VS Code</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+  <p class="section-subtitle">AI, DevOps, Full-Stack — a showcase of what I've built with code and creativity.</p>
+  
+  <div class="projects-grid">
+    
+    <div class="project-card hidden card">
+      <h3>PORTFOLIO</h3>
+      <p>Personal developer portfolio designed using HTML, CSS, and JavaScript. Showcases skills, projects, achievements, and contact details with a responsive dark-themed layout and interactive animations.</p>
+      <a href="https://github.com/Sri0004/Mahasri-Portfolio.git" target="_blank" class="project-btn">View Project</a>
+    </div>
+    
+    <div class="project-card hidden card">
+      <h3>AI Fault Detection System</h3>
+      <p>An intelligent system for real-time industrial fault detection and predictive maintenance. Built with machine learning models, FastAPI backend, and React frontend for monitoring, analysis, and visualization.</p>
+      <a href="https://sri0004.github.io/fault_detection_ui/" target="_blank" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card hidden card">
+      <h3>Women's Health Data Insights</h3>
+      <p>Data analytics dashboard developed using Python and FastAPI to analyze trends in women's health. Visualizes insights like symptoms, treatments, and health patterns using interactive charts and graphs.</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card hidden card">
+      <h3>To-Do List App</h3>
+      <p>A minimalist and responsive to-do list web application built with HTML, CSS, and JavaScript. Allows users to add, delete, mark tasks as completed, and store them locally using browser storage.</p>
+      <a href="https://sri0004.github.io/to-do-list/" target="_blank" class="project-btn">View Project</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Achievements & Awards Section -->
+<section class="achievements-section" id="achievements">
+  <h2 class="section-title">Achievements & Awards</h2>
+  <ul class="achievement-list">
+    <li>
+      <div class="achievement-item">
+        <p><strong>Academic Topper</strong> — Recognized for outstanding academic performance.</p>
+      </div>
+    </li>
+    <li>
+      <div class="achievement-item">
+        <p><strong>TANCAM 25 Hackathon</strong> — Selected participant in Tamil Nadu's state-level innovation challenge.</p>
+      </div>
+    </li>
+    <li>
+      <div class="achievement-item">
+        <p><strong>Dr. Kalam Young Achievers Award</strong> — Honored for excellence in technology and innovation.</p>
+      </div>
+    </li>
+    <li>
+      <div class="achievement-item">
+        <p><strong>Dark Pattern Buster Hackathon</strong> — Developed a UI Ethics Analyzer for e-commerce
+platforms; recognized among top entries.</p>
+      </div>
+    </li>
+    <li>
+      <div class="achievement-item">
+        <p><strong>Global Society for Technical Education</strong> — Active member contributing to technical awareness programs.</p>
+
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-container">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Email</h3>
+      <p><a href="mailto:mahasrir412@gmail.com">mahasrir412@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <h3>Phone</h3>
+      <p><a href="tel:+91 97900913749">+91 97900913749</a></p>
+    </div>
+    <div class="contact-card">
+      <h3>LinkedIn</h3>
+      <p>
+        <a href="https://www.linkedin.com/in/mahasri-r-2b2872293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/your-profile
+        </a>
+      </p>
+    </div>
+    <div class="contact-card">
+      <h3>GitHub</h3>
+      <p>
+        <a href="https://github.com/Sri0004" target="_blank" rel="noopener noreferrer">
+          github.com/Sri0004
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
